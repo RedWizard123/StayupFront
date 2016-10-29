@@ -34,6 +34,7 @@ $(function(){
 
     add_comment("Test User",
         "Anglar 2.0 has officially been released and we teach you how to qiuckly build apps and add authentication the right way! Let me know if you have any questions.",
+
         "2016-5-7",
         "57"
     );
