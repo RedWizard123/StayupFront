@@ -1,5 +1,22 @@
+@keyframes planefly{
+	0%{}
+	15%{
+        transform:rotate(45deg);
+        left:0;
+        top:0;
+    }
+	100%{
+        transform:rotate(45deg);
+        left:1500px;
+        top:2500px;
+    }
+
+
+}
+
+
 body{
-    margin:0px;
+    margin:0;
     font-family:Microsoft YaHei;
     background-color: rgb(240,243,189);
 
@@ -15,9 +32,15 @@ ul{
 
 
 header{
+
     background-color: #00a896;
-    margin:0px;
+    margin:0;
     height:60px;
+	position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index: 999;
 
 }
 .header-svg{
@@ -28,7 +51,8 @@ header{
     display:inline-block;
     line-height: 40px;
     float:left;
-
+    position: absolute;
+    transition: linear 2s;
 }
 .header-span{
     font-size: 18px;
@@ -36,7 +60,7 @@ header{
     line-height: 40px;
     margin: 10px 10px;
     color:#d1e9b8;
-
+	position:absolute;
 
 }
 
@@ -84,6 +108,8 @@ header{
     /*min-width:900px;*/
 }
 .main{
+    position: relative;
+    top:50px;
     width:100%;
     /*min-width:900px;*/
 }
@@ -302,5 +328,4 @@ header{
 .comment-div{
     margin:20px 0;
     overflow:hidden;
-	
 }

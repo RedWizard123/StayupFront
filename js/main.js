@@ -96,6 +96,14 @@ $(function(){
 	});
 
 
+	$("#fly").click(function(){
+		$("#fly").addClass("fly");
+		setTimeout(function(){
+			$("#fly").removeClass("fly");
+		},5000);
+	});
+
+
 
 
 
