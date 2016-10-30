@@ -4,9 +4,6 @@ body{
     background-color: rgb(240,243,189);
 
 }
-textarea{
-	resize:none;
-}
 ul{
     list-style: none;
     padding: 0;
