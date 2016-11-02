@@ -41,6 +41,7 @@ header{
     top:0;
     width:100%;
     z-index: 999;
+    box-shadow:0 4px 8px #b6b6b6;
 
 }
 .header-svg{
@@ -52,7 +53,8 @@ header{
     line-height: 40px;
     float:left;
     position: absolute;
-    transition: linear 2s;
+    transition:transform linear 50ms;
+    z-index: 999;
 }
 .header-span{
     font-size: 18px;
@@ -61,7 +63,7 @@ header{
     margin: 10px 10px;
     color:#d1e9b8;
 	position:absolute;
-
+    left:60px;
 }
 
 .header-img{
@@ -125,9 +127,9 @@ header{
 }
 .main-right-up{
     background-color: #d1e9b8;
-
-
+    transition: height 0.5s ease-in-out;
 }
+
 .x-div{
     border-bottom: 6px solid rgb(216,216,216);
 
@@ -162,8 +164,6 @@ header{
 .we-div{
     text-align: center;
     margin:20px 4px;
-    margin:20px 4px;
-
 }
 .we-span{
     font-size: 28px;
@@ -287,6 +287,19 @@ header{
     height:60px;
     border-radius: 10px;
 }
+
+.float-tips{
+    font-size: 16px;
+    background-color: blueviolet;
+    transition:opacity 0.5s ease-in-out;
+    box-shadow: #b6b6b6 4px 4px 6px;
+    position: relative;
+    opacity: 0;
+    z-index: 99;
+    width:80px;
+    left:20px;
+    text-align: center;
+}
 .comment-word-div{
     float:right;
     width:450px;
@@ -328,4 +341,24 @@ header{
 .comment-div{
     margin:20px 0;
     overflow:hidden;
+    position: relative;
+}
+.fly{
+    transform: rotate(45deg);
+    transition: all 1s ease-in-out;
+}
+#fly_div{
+    width:60px;
+    height:60px;
+}
+.main-right-down{
+    transition: height 0.5s ease-in-out;
+}
+.main-right-down-hide{
+    height:24px;
+    overflow: hidden;
+}
+.fadeout{
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
 }

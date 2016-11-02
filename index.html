@@ -10,7 +10,7 @@
 
 <body>
 <header>
-	<img class="header-svg" id="fly" src="images/paper-plane.svg"></img>
+    <img class="header-svg" id="fly" src="images/paper-plane.svg">
     <span class="header-span">
         Fly Message
     </span>
@@ -84,14 +84,16 @@
         </ul>
         </div>
         <div class="main-right">
-            <div class="main-right-up">
+            <div class="main-right-up" id="right1">
                 <div class="x-div">
-                    <a href="#">x</a>
+                    <a id="right1ctrl">x</a>
                 </div>
-                <div class="dot-div"></div>
-                <div class="rect-div"></div>
-                <div class="glasses-div">
-                    <img src="images/glasses.png" class="glasses-img"/>
+                <div class="link">
+                    <div class="dot-div"></div>
+                    <div class="rect-div"></div>
+                    <div class="glasses-div">
+                        <img src="images/glasses.png" class="glasses-img"/>
+                    </div>
                 </div>
                 <div class="we-div">
                     <span class="we-span-small-left">This Time</span>
@@ -99,9 +101,9 @@
                     <span class="we-span-small-right">different</span>
                 </div>
             </div>
-            <div class="main-right-down">
+            <div class="main-right-down" id="right2">
                 <div class="x-div">
-                    <a href="#">-</a>
+                    <a id="right2ctrl" style="cursor: pointer">-</a>
                 </div>
                 <span class="recommend">推荐主页</span>
                 <div class="pic-slide-div">
@@ -141,40 +143,29 @@
             <div style="clear:both;"></div>
         </div>
         <div class="all-comment-div">
-        
-        	<!--    start-->
             <div class="comment-div">
-                <div class="icon-div">
+                <div class="icon-div" onmouseover="this.querySelector('.float-tips').style.opacity=1;" onmouseout="this.querySelector('.float-tips').style.opacity=0;">
                     <img src="images/avatar.png" />
+                    <div class="float-tips">{{name}}</div>
                 </div>
                 <div class="comment-word-div">
                     <span class="comment-word-span">{{name}}</span>
                     <p class="comment-word-p">{{text}}</p>
                     <div class="comment-word-bottom-div">
                         <span class="like">{{like}}</span>
-                        <img class="like-svg" src="images/like.svg"> </img>
+                        <img class="like-svg" src="images/like.svg">
                         <span class="time-span">{{time}}</span>
-
                     </div>
                 </div>
                 <div style="clear:both;"></div>
             </div>
-			<!--end-->
-			
-			<!-- scroll to add-->
-			
-			
         </div>
 
     </div>
 </div>
 
-<footer></footer>
+<footer>
+    <!--null-->
+</footer>
 </body>
-
-
-
-
-
-
 </html>
