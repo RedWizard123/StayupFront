@@ -336,6 +336,7 @@ header{
     font-size: 24px;
     text-align: left;
     display: block;
+    margin-left:10px;
 
 }
 .comment-div{
@@ -361,4 +362,29 @@ header{
 .fadeout{
     opacity:0;
     transition: opacity 0.5s ease-in-out;
+}
+.tip-div{
+    transform: rotate(45deg);
+    width:30px;
+    height:30px;
+    position: absolute;
+    top: 13px;
+    left:78px;
+    background-color: white;
+}
+.main-right-bottom{
+    font-size:12px ;
+    color:#a7a7a7;
+    text-wrap: avoid;
+}
+.main-right-bottom>div>span{
+    margin:0 5px;
+}
+.main-right-bottom>div>a{
+    text-decoration: none;
+    color:#a7a7a7;
+}
+
+.main-right-bottom>div>a:visited{
+    text-decoration: none;
 }
